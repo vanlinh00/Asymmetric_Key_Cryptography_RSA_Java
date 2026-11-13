@@ -50,6 +50,8 @@ curl -H "Authorization: Bearer $TOKEN" http://localhost:8082/api/data
 
 ---
 
+run file: bash generate-keys.sh
+
 ## 3. Dynamic Key Rotation via JWKS Endpoint
 
 Expose RFC 7517 JWKS on the Auth Service:
