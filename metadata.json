@@ -1,0 +1,6 @@
+{
+  "name": "Asymmetric JWT Microservices Engine",
+  "description": "Asymmetric microservice architecture with RSA-signed JWT Auth Producer, JWKS dynamic key rotation, and independent zero-network Public Key Resource verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

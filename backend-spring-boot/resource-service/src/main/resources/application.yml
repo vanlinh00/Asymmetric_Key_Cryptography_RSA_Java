@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: resource-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # Strategy 1: Static Public Key file (Zero Network Calls, totally isolated)
+          public-key-location: classpath:certs/public.pem
+          
+          # Strategy 2: Dynamic JWKS Endpoint (for automated Key Rotation)
+          # Uncomment below line to dynamically fetch and cache public keys:
+          # jwk-set-uri: http://localhost:8081/.well-known/jwks.json
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
